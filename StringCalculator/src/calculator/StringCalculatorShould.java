@@ -36,5 +36,10 @@ public class StringCalculatorShould {
 	public void delimiters_can_be_of_any_length() {
 		assertEquals(6,stringCalculator.add("//[***]\\n1***2***3"));
 	}
+	@Test
+	public void allow_multiple_delimiters_like_this() {
+		assertEquals(6,stringCalculator.add("//[*][%]\\n1*2%3"));
+		
+	}
 
 }
