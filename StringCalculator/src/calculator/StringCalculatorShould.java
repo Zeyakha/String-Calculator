@@ -32,5 +32,9 @@ public class StringCalculatorShould {
 	public void numbers_bigger_than_1000_should_be_ignored() {
 		assertEquals(2,stringCalculator.add("21001"));
 	}
+	@Test
+	public void delimiters_can_be_of_any_length() {
+		assertEquals(6,stringCalculator.add("//[***]\\n1***2***3"));
+	}
 
 }
