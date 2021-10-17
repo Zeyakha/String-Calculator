@@ -24,5 +24,9 @@ public class StringCalculatorShould {
 	public void allow_the_add_method_to_handle_new_lines_between_numbers_instead_of_commas(){
 		assertEquals(6,stringCalculator.add("1\n2,3"));
 	}
+	@Test
+	public void  support_different_delimiters() {
+		assertEquals(3,stringCalculator.add("//;\\n1;2"));
+	}
 
 }
